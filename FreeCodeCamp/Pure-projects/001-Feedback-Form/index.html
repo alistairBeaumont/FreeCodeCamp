@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Feedback</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <header class="header">
+        <h1 id="title">The Feedback</h1> 
+        <h3 id="description">This is a constructive, objective and brutal 'Feedback' to me from you so that I can improve myself better :)</h3>
+      </header>
+
+      <form id="survey-form">
+
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input 
+            id="name" 
+            type="text" 
+            placeholder="Enter your name"
+            required/> 
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input 
+            id="email" 
+            type="email" 
+            placeholder="Enter your Email"
+            required/> 
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Number</label>
+          <input 
+            id="number" 
+            type="number" 
+            min="21" max="90"
+            placeholder="Age"/>
+        </div>
+
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="tech-job">Full Time Tech-job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer Not to Say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you hire me or recommend me to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely
+          </label> 
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+           />After the improvments done that I recomended
+          </label> 
+          <label>
+          <input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Not-sure
+          </label> 
+          <label>
+          <input
+            name="user-recommend"
+            value="never"
+            type="radio"
+            class="input-radio"
+          />Never
+          </label> 
+        </div>
+
+        <div class="form-group">
+          <p> Which areas do I need to improve?           
+            <span class="clue">(Check all that apply)</span>
+          </p> 
+
+        <label>
+          <input
+            name="prefer"
+            value="front-end"
+            type="checkbox"
+            class="input-checkbox"/>
+            Front-End
+        </label> 
+
+        <label>
+          <input
+            type="checkbox"
+            name="prefer"
+            value="back-end"
+            class="input-checkbox"
+            />Back-End
+        </label> 
+
+        <label>
+          <input
+            type="checkbox"
+            name="prefer"
+            value="data-visualization"
+            class="input-checkbox"
+          />Data Visualization
+        </label> 
+
+        <label>
+          <input
+           type="checkbox"
+           name="prefer"
+           value="cyber-security"
+           class="input-checkbox" 
+          />Information Security
+        </label> 
+      </div>
+
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea 
+          id="comments"
+          name="comment"
+          class="input-textarea"
+          placeholder="Enter your comment here... This is the most important part for me!"
+        ></textarea> 
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+  </body>
+</html>
